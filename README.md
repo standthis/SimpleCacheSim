@@ -10,7 +10,7 @@ To get started
 Build the code using make.
 
 You should now be able to run it using:
-$ ./cachesim Data/L3-unified-2way.conf < Data/test.workload 
+`$ ./cachesim Data/L3-unified-2way.conf \< Data/test.workload`
 
 This will run an example configured as:
 * unified L1 totalling 32KiB, direct-mapped, divided into 32B blocks
@@ -39,21 +39,21 @@ DATA
 A simulation is configured with a file that contains the following on each
 line:
 
-\<bytes\> <block size> <hit time> <tag check time> <associativity> <split>
+\<bytes\> \<block size\> \<hit time\> \<tag check time\> \<associativity\> \<split\>
 
 defined as
-* <bytes> -- total size of the cache
-* <block size> -- block size in bytes
-* <hit time>   -- time for a hit (0 for L1 data accesses)
-* <tag check time> -- time to look up tags (not used in hits)
-* <associativity> -- 1 for direct-mapped (DM); a power of 2 <=
-  <bytes>/<block size>
-* <split> -- 0 for unified data (D) and instruction (I), 1 for split;
+* \<bytes\> -- total size of the cache
+* \<block size\> -- block size in bytes
+* \<hit time\>   -- time for a hit (0 for L1 data accesses)
+* \<tag check time\> -- time to look up tags (not used in hits)
+* \<associativity\> -- 1 for direct-mapped (DM); a power of 2 <=
+  \<bytes>/\<block size\>
+* \<split\> -- 0 for unified data (D) and instruction (I), 1 for split;
   ignored except in L1
 
 Trace files are structured as:
-<type> <hex number>
-where <type> is one of:
+\<type\> \<hex number\>
+where \<type\> is one of:
 * I -- instruction fetch
 * R -- data read
 * W -- data write
