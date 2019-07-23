@@ -32,7 +32,7 @@ access time of 100 units; for a 64B LLC block, 120 time units.
 What follows is a description of data used, data structures and main functions
 (in the order they are called starting from main).
 
-At the end is a full list of source (C) ahd header (H) files.
+At the end is a full list of source (c) and header (c) files.
 
 DATA
 ====
@@ -174,17 +174,17 @@ in addition to the following:
 
 SOURCE FILES
 ============
-IOutils.c                 -- open a file, find out its size
-cachesetup.c              -- create and access cache parameters
-cachesim.c                -- main program: sets up, launches,ends simulation
-error.c                   -- reports and handles errors (option to exit)
-get_args.c                -- config file from command line; opens and reads it 
-multilevelAssoc.c         -- implements associative multilevel cache simulation
-rawcache.c                -- implements a single DM cache with no timing
-readfile.c                -- read file into buffer as a '\0'-terminated string
-readtrace.c               -- read next line from the trace file
-simulateMultilevelAssoc.c -- pass non-exception trace records to simulator
-stats.c                   -- keep track of fetch, read, write stats in struct
+* IOutils.c                 -- open a file, find out its size
+* cachesetup.c              -- create and access cache parameters
+* cachesim.c                -- main program: sets up, launches,ends simulation
+* error.c                   -- reports and handles errors (option to exit)
+* get_args.c                -- config file from command line; opens and reads it 
+* multilevelAssoc.c         -- implements associative multilevel cache simulation
+* rawcache.c                -- implements a single DM cache with no timing
+* readfile.c                -- read file into buffer as a '\0'-terminated string
+* readtrace.c               -- read next line from the trace file
+* simulateMultilevelAssoc.c -- pass non-exception trace records to simulator
+* stats.c                   -- keep track of fetch, read, write stats in struct
 stringutils.c             -- turn buffer of lines into strings array per line
 workload.c                -- manage a list of trace files
 
