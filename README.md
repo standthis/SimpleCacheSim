@@ -39,7 +39,7 @@ DATA
 A simulation is configured with a file that contains the following on each
 line:
 
-<bytes> <block size> <hit time> <tag check time> <associativity> <split>
+\<bytes\> <block size> <hit time> <tag check time> <associativity> <split>
 
 defined as
 * <bytes> -- total size of the cache
