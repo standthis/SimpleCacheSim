@@ -1,6 +1,6 @@
 # SimpleCacheSime
-Simple cache simulator for education: basic multilevel cache simulator with simplifying assumptions
-to aid pedegogy and to simplify implementation.
+Simple cache simulator for education: basic multilevel cache simulator with
+simplifying assumptions to aid pedegogy and to simplify implementation.
 
 Philip Machanick
 June 2018
