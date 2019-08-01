@@ -46,6 +46,13 @@ $[L1D]	362740	7114	0	3627400	1166485
 $[L2]	2021	6395	0	0	807449
 Total elapsed time 6217051, total hits 961706, total misses 14811, evictions for inclusion 0; instructions: 598247
 
+* L1 vs L3 unified
+
+L3-unified-2way simulation exhibited: Total elapsed time 3168413, total hits 961706, total misses 28830 
+whereas the L1 version demonstrated: Total elapsed time 2519612, total hits 961706, total misses 23113
+Therefore the L1 version is 20% faster than the L3 version of cache simulation. 
+
+
 # l1.conf
 	blks	blksize	hitT	lookupT	assoc	split?	Total Bytes
 L1:	131072	32	1	1	1	0	4194304
