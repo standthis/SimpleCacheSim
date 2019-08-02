@@ -12,12 +12,14 @@ The results of the simulations are shown below. The trade-offs under
 consideration include cache size, split vs. unified L1, number cache size, split vs. unified L1, number of levels and design trade-offs like a bigger cache vs. a smaller but faster cache. 
 The aim of this experiment is to analyse the effects of these different design 
 trade-offs on performance, namely the total elapsed time as this indicates 
-improved performance under the given synthetic workload.
+an important metric for performance under the given synthetic workload.
 
 #Results 
 The L3-unified-2way configuration provides a total elapse time of 3168413 and
 total hits 961706 with total misses 28830. Whereas the same configuration with a
-L1 split (block size split into data and instructions) provided elapsed time 6217051, total hits 961706, total misses 14811. This indicates a slow down of 3048638 with the addition of a split L1 cache given the same workload. A split design allows for more aggressive pipelining as it allows for data and instruction accesses to occur in parallel thereby improving performance. In this case this performance improvement was not seen as the simulation simply reduces the size of L1 and accesses only the second part of the split thereby resulting in a smaller L1 cache which explains the higher total miss rate associated with the split simulation.  
+L1 split (block size split into data and instructions) provided elapsed time 6217051, total hits 961706, total misses 14811. This indicates a slow down of 3048638 with the addition of a split L1 cache given the same workload. A split design allows for more aggressive pipelining as it allows for data and instruction accesses to occur in simultaneously thereby improving performance. In this case this performance improvement was not actualised on the given workload.  
+
+as the simulation simply reduces the size of L1 and accesses only the second part of the split thereby resulting in a smaller L1 cache which explains the higher total miss rate associated with the split simulation.  
 
 
 #L3-unified-2way.conf
